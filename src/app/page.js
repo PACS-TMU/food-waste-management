@@ -17,7 +17,7 @@ export default function Home() {
     return () => {
         window.OneSignal = undefined;
     };
-}, []); // <-- run this effect once on mount
+}, []);
   return (
       <div>
       </div>
