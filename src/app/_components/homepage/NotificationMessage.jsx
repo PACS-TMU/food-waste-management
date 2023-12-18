@@ -14,10 +14,10 @@ export default function NotificationMessage({ isNotification, setNotification })
                             className="mr-4"
                         />
                     </div>
-                    <p className="notification-text font-sans pl-4">"To Go!" would like to send you notifications for latest news and updates.</p>
+                    <p className="notification-text font-sans pl-4">&quot;To Go!&quot; would like to send you notifications for latest news and updates.</p>
                 </div>
                 <button
-                    className="notification-button bg-blue-highlight hover:opacity-90 w-1/2 rounded-sm my-3 py-2"
+                    className="notification-button bg-blue-highlight hover:opacity-90 w-1/2 rounded-sm my-3 py-2 shadow-md"
                     onClick={(e) => { setNotification(!isNotification) }}
                 >
                     Allow
