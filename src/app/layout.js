@@ -13,8 +13,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <script
-          src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"
-          async=""
+          src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.js"
+          defer
         ></script>
       </head>
       <body className="main">
