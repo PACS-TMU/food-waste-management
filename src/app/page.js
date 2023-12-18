@@ -1,15 +1,18 @@
-'use client';
-import runOneSignal from '@/app/_components/general/OneSignal';
-import { useEffect } from 'react';
-
-
+"use client";
+import { useState } from "react";
+import NotificationMessage from "./_components/homepage/NotificationMessage";
 
 export default function Home() {
-  useEffect(() => {
-    runOneSignal();
-  });
+  const [isNotification, setNotification] = useState(true);
+
   return (
-      <div>
-      </div>
-  )
+    <div className="homepage flex justify-center mx-auto">
+      {isNotification && (
+        <NotificationMessage
+          isNotification={isNotification}
+          setNotification={setNotification}
+        />
+      )}
+    </div>
+  );
 }
