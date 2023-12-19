@@ -17,6 +17,10 @@
   font-family: Lato;
   src: url(/fonts/Lato/Lato-Regular.ttf);
 }
+@font-face {
+  font-family: Courgette;
+  src: url(/fonts/Courgette/Courgette-Regular.ttf);
+}
 
 /* Set bg color and margins */
 html {
@@ -32,7 +36,11 @@ body {
 }
 
 /* Header font */
-h1, h2, h3, h4, h5, h6 {
+h1 {
+  font-family: Courgette;
+}
+
+h2, h3, h4, h5, h6 {
   font-family: Abril;
 }
 

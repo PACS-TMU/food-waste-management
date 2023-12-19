@@ -7,13 +7,13 @@ export default function Home() {
   const [isNotification, setNotification] = useState(true);
 
   return (
-    <div className="homepage flex justify-center mx-auto">
+    <div className="homepage flex flex-col justify-center items-center">
       {isNotification && (
         <motion.div
           initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: -60 }}
+          animate={{ opacity: 1, y: -70 }}
           transition={{ duration: 0.5 }}
-          className="w-full flex justify-center mx-auto"
+          className="w-full flex flex-col justify-center items-center"
         >
           <NotificationMessage
             isNotification={isNotification}
@@ -21,6 +21,9 @@ export default function Home() {
           />
         </motion.div>
       )}
+      <div className={`${isNotification ? "opacity-0" : "opacity-100"}`}>
+        The rest of the body will go here
+      </div>
     </div>
   );
 }

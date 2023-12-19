@@ -2,14 +2,15 @@ import Image from "next/image";
 
 export default function Navbar() {
     return (
-        <nav className="bg-dark-green py-2 w-full flex">
+        <nav className="bg-dark-green py-2 w-full flex flex-row justify-between items-center px-8">
+            <h1 className="text-white text-3xl">To Go!</h1>
             <Image
-                src={"/icons/favicon-32x32.png"}
+                src={"/icons/logo.png"}
                 alt={"PACS x VIRO"}
-                width={32}
-                height={32}
+                width={512}
+                height={512}
                 priority={true}
-                className="my-2 mx-3"
+                className="my-2 w-10"
             />
         </nav>
     )
