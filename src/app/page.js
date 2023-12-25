@@ -4,6 +4,7 @@ import NotificationMessage from "./_components/homepage/NotificationMessage";
 import Entry from "./_components/homepage/Entry";
 import { motion } from "framer-motion";
 
+
 export default function Home() {
   const [isNotification, setNotification] = useState(true);
   const [foodItems, setFoodItems] = useState([]);
