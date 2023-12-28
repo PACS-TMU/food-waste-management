@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Navbar() {
     return (
-        <nav className="bg-dark-green py-2 w-full flex flex-row justify-between items-center px-8">
+        <nav className="bg-dark-green py-2 w-full flex flex-row justify-between items-center h-16 px-8">
             <h1 className="text-white text-3xl">To Go!</h1>
             <Image
                 src={"/icons/logo.png"}

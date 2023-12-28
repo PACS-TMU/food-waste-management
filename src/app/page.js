@@ -28,7 +28,7 @@ export default function Home() {
       {isNotification && (
         <motion.div
           initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: -70 }}
+          animate={{ opacity: 1, y: -60 }}
           transition={{ duration: 0.5 }}
           className="w-full flex flex-col justify-center items-center"
         >

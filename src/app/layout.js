@@ -1,7 +1,6 @@
 import "./globals.css";
 import Footer from "@/app/_components/general/Footer";
 import Navbar from "@/app/_components/general/Navbar";
-import NotificationMessage from "@/app/_components/homepage/NotificationMessage";
 
 export const metadata = {
   title: "Food Waste Management",
