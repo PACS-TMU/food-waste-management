@@ -37,7 +37,7 @@ export default function Home() {
       {isNotification && (
         <motion.div
           initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: -60 }}
+          animate={{ opacity: 1, y: -55 }}
           transition={{ duration: 0.5 }}
           className="w-full flex flex-col justify-center items-center"
         >
@@ -82,7 +82,6 @@ export default function Home() {
               <ExpandedEntry
                 key={foodItems[isEntryExpanded - 1].id}
                 foodItem={foodItems[isEntryExpanded - 1]}
-                isExpanded={true}
                 setEntryExpanded={setEntryExpanded}
               />
             </div>
