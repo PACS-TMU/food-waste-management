@@ -3,8 +3,8 @@ import { MdOutlineCheckBox, MdOutlineCheckBoxOutlineBlank } from "react-icons/md
 
 export default function ExpandedEntry({ foodItem, setEntryExpanded }) {
     return (
-        <div>
-            <IoClose className="pt-1 ml-auto mr-2" size={32} onClick={() => { setEntryExpanded(false) }} />
+        <div className="flex flex-col">
+            <button className="pt-1 ml-auto mr-2"><IoClose size={32} onClick={() => { setEntryExpanded(false) }} /></button>
             <div className="details mx-2 -mt-4">
                 <p className="text-lg pt-1 tracking-wider"><u>{foodItem.provider}</u> has food <span>To Go!</span></p>
                 <p className="text-lg pt-1 tracking-wider"><u>Pickup at:</u> <i>{foodItem.location}</i></p>
