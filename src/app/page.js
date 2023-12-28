@@ -38,11 +38,12 @@ export default function Home() {
           />
         </motion.div>
       )}
-      <div className={`body w-[95%] ${isNotification ? "opacity-0" : "opacity-100"} flex justify-center`}>
+      <div className={`body w-[95%] ${isNotification ? "opacity-0" : "opacity-100"} flex flex-col justify-center`}>
+        <p className="text-center text-2xl pt-2">Tap an entry to see more details!</p>
         <ul className="entry-list w-full">
           <li className="entry-item w-full grid grid-cols-1 items-center justify-center">
             {foodItems.map((foodItem) => (
-              <div key={foodItem.id} className={`entry-wrapper w-full h-[20vh] my-2 rounded-md ${foodItem.id % 2 == 1 ? 'bg-blue-highlight' : 'bg-light-green'}`}>
+              <div key={foodItem.id} className={`entry-wrapper hover:scale-105 w-full my-2 rounded-md ${foodItem.id % 2 == 1 ? 'bg-blue-highlight' : 'bg-light-green'}`}>
                 <Entry key={foodItem.id} foodItem={foodItem} />
               </div>
             ))}
