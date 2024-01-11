@@ -4,6 +4,10 @@ export default function Code() {
     return (
         <div className="flex items-center justify-center p-4 h-[70vh] flex-col w-[95%] mx-auto py-4 mt-20 mb-20">
             <p className="text-3xl font-semibold text-center p-4">Enter the Code You Found!</p>
+            <p className="text-left py-4 pt-2">
+                After you&apos;ve solved each hint, you will get a digit, just like the first hint. There will be 7 digits in total, and you will need to enter 
+                them in the correct order to finish the scavenger hunt. Good luck!
+            </p>
             <input
                 className='my-2 w-[75%] h-12 p-2 rounded-md bg-[#FDFDFD] placeholder-gray-500'
                 name="Code"
