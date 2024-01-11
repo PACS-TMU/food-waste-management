@@ -22,6 +22,9 @@ export default function Form() {
                         body: data,
                     })
                 }, 1000);
+                setTimeout(() => {
+                    window.location.replace('/account/scavenger-hunt');
+                }, 2000);
             }}
             className="flex flex-col justify-center items-center pt-4 w-full"
         >

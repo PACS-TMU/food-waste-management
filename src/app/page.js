@@ -47,7 +47,11 @@ export default function Home() {
           />
         </motion.div>
       )}
-      <div className={`body w-[95%] ${isNotification ? "opacity-0" : "opacity-100"} flex flex-col justify-center`}>
+      <div
+        className={`body w-[95%] ${
+          isNotification ? "opacity-0" : "opacity-100"
+        } flex flex-col justify-center`}
+      >
         <p className="text-center text-2xl pt-2">
           Tap an entry to see more details!
         </p>
@@ -56,7 +60,9 @@ export default function Home() {
             {foodItems.map((foodItem) => (
               <button
                 key={foodItem.id}
-                className={`entry-wrapper text-left w-full my-2 rounded-md ${foodItem.id % 2 == 1 ? "bg-blue-highlight" : "bg-light-green"}`}
+                className={`entry-wrapper text-left w-full my-2 rounded-md ${
+                  foodItem.id % 2 == 1 ? "bg-blue-highlight" : "bg-light-green"
+                }`}
                 onClick={() => {
                   setEntryExpanded(foodItem.id);
                 }}
@@ -78,7 +84,13 @@ export default function Home() {
             ref={ref}
             className="fixed top-0 mt-[4.5rem] w-[95%] flex flex-col justify-center items-center"
           >
-            <div className={`entry-wrapper w-full max-w-[750px] p-2 rounded-md ${foodItems[isEntryExpanded - 1].id % 2 == 1 ? "bg-blue-highlight" : "bg-light-green"}`}>
+            <div
+              className={`entry-wrapper w-full max-w-[750px] p-2 rounded-md ${
+                foodItems[isEntryExpanded - 1].id % 2 == 1
+                  ? "bg-blue-highlight"
+                  : "bg-light-green"
+              }`}
+            >
               <ExpandedEntry
                 key={foodItems[isEntryExpanded - 1].id}
                 foodItem={foodItems[isEntryExpanded - 1]}

@@ -1,7 +1,9 @@
+import Construction from "@/app/_components/general/Construction";
+
 export default function Group() {
     return (
-        <div>
-            <h1>Group</h1>
+        <div className="flex w-full h-[80vh] items-center justify-center">
+            <Construction />
         </div>
     )
 }

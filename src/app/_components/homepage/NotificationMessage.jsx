@@ -31,7 +31,7 @@ export default function NotificationMessage({ isNotification, setNotification })
                             document.getElementById('done-button').className = 'bg-light-green hover:opacity-90 hover:scale-110 w-1/2 rounded-sm my-3 py-2 shadow-md block text-white';
                             document.getElementById("notification-logo").className = 'mr-4';
                         }, 500);
-
+                        localStorage.setItem("flag", false);
                     }}
                 >
                     Allow
