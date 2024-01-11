@@ -3,7 +3,7 @@ import { IoCloseSharp } from "react-icons/io5";
 
 export default function ThankYou() {
     return (
-        <div className="flex items-center justify-center p-4 h-[70vh] flex-col w-[95%] mx-auto py-4 mt-16 mb-12">
+        <div className="flex items-center justify-center p-4 h-[70vh] flex-col w-[95%] mx-auto py-4 mt-20 mb-16">
             <p className="text-3xl font-semibold text-center p-4">That&apos;s all Folks!</p>
             <p className="text-lg text-left px-4 py-2">
                 The rest of the scavanger hunt won&apos;t need you to use the app. Please speak to one of the VIRO X PACS team members to get the next clue.

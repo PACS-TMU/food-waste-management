@@ -2,7 +2,7 @@
 
 export default function Code() {
     return (
-        <div className="flex items-center justify-center p-4 h-[70vh] flex-col w-[95%] mx-auto py-4 mt-16 mb-12">
+        <div className="flex items-center justify-center p-4 h-[70vh] flex-col w-[95%] mx-auto py-4 mt-20 mb-16">
             <p className="text-3xl font-semibold text-center p-4">Enter the Code You Found!</p>
             <input
                 className='my-2 w-[75%] h-12 p-2 rounded-md bg-[#FDFDFD] placeholder-gray-500'
@@ -21,7 +21,7 @@ export default function Code() {
                 onClick={() => {
                     var code = document.getElementsByName("Code")[0].value
                     console.log(code)
-                    if (code == "54781259") {
+                    if (code == "3425237") {
                         window.location.href = "/account/scavenger-hunt/code/thank-you"
                     } else {
                         alert("This is the wrong code!")

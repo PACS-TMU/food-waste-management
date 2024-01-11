@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function ScavengerHunt() {
     return (
-        <div className="flex items-center justify-center p-4 h-[70vh] flex-col w-[95%] mx-auto py-4 mt-16 mb-12">
+        <div className="flex items-center justify-center p-4 h-[70vh] flex-col w-[95%] mx-auto py-4 mt-20 mb-16">
             <p className="text-3xl font-semibold text-center p-4">Let the Scavenger Hunt begin!!</p>
             <p className="text-left p-6 pt-2">
                 Welcome, intrepid space explorers, to the VIRO X PACS Cosmic Scavenger Hunt – where the mysteries of the universe 
