@@ -2,7 +2,7 @@
 
 export default function Code() {
     return (
-        <div className="flex items-center justify-center p-4 h-[70vh] flex-col w-[95%] mx-auto py-4 mt-20 mb-16">
+        <div className="flex items-center justify-center p-4 h-[70vh] flex-col w-[95%] mx-auto py-4 mt-20 mb-20">
             <p className="text-3xl font-semibold text-center p-4">Enter the Code You Found!</p>
             <input
                 className='my-2 w-[75%] h-12 p-2 rounded-md bg-[#FDFDFD] placeholder-gray-500'
