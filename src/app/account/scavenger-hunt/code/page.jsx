@@ -2,15 +2,15 @@
 
 export default function Code() {
     return (
-        <div className="flex items-center justify-center p-4 h-[70vh] flex-col">
+        <div className="flex items-center justify-center p-4 h-[70vh] flex-col w-[95%] mx-auto py-4 mt-16 mb-12">
             <p className="text-3xl font-semibold text-center p-4">Enter the Code You Found!</p>
             <input
                 className='my-2 w-[75%] h-12 p-2 rounded-md bg-[#FDFDFD] placeholder-gray-500'
                 name="Code"
                 type="text"
-                placeholder="8-Digit Code"
-                maxLength={8}
-                pattern="[0-9]{8}"
+                placeholder="7-Digit Code"
+                maxLength={7}
+                pattern="[0-9]{7}"
                 onKeyDown={(e) => {
                     var allowed = new RegExp("[0-9]|Backspace|Delete|ArrowLeft|ArrowRight|ArrowUp|ArrowDown|Tab|Enter")
                     allowed.test(e.key) ? "" : e.preventDefault()
